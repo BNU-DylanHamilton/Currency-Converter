@@ -37,13 +37,13 @@ namespace Converter_3._1
         private void dollarsConversion(object sender, EventArgs e)
         {
             amount = Convert.ToDouble(poundsTextBox.Text) * dollars;
-            convertedLabel.Text = amount.ToString() + " Dollars";
+            convertedLabel.Text = amount.ToString("0.00") + " Dollars";
         }
 
         private void eurosConversion(object sender, EventArgs e)
         {
             amount = Convert.ToDouble(poundsTextBox.Text) * euros;
-            convertedLabel.Text = amount.ToString() + " Euros";
+            convertedLabel.Text = amount.ToString("0.00") + " Euros";
         }
 
         private void rupeesConversion(object sender, EventArgs e)
